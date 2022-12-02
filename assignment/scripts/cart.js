@@ -1,7 +1,7 @@
 console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
-const basket = [];
+let basket = [];
 //- Create a global variable named `basket` and set it to an empty array.
 
 //- Create a function called `addItem`. It should:
@@ -13,17 +13,16 @@ function addItem(item) {
     basket.push(item);
     return true;
 }
-addItem('jesus');
-addItem(' mary');
+addItem('corn ');
+addItem('beef ');
 console.log(`Basket is ${basket}`);
-console.log('Adding apples (expect true)', addItem(' apples'));
+console.log('Adding apples (expect true)', addItem('apples '));
 console.log(`Basket is now ${basket}`);
 //- Create a function called `listItems`. It should:
 //  - loop over the items in the `basket` array
 //  - console.log each indiviconst x = 0;
-let j = 0;
 function listItems(basket) {
-    for(let j = 0; j <= basket.length; j++) {
+    for(let j = 0; j < basket.length; j++) {
         console.log(basket[j]);
     }
 }
@@ -31,14 +30,16 @@ listItems(basket);
 
 //- Create a function called `empty`. It should:
 //  - reset the `basket` to an empty array
-function empty(basket)  {
-    if( basket.length > 0) {
-        basket.pop();
-    }
+function empty(item)  {
+    console.log('removed item', item);
+    basket.pop();
+    return true;
 }
-console.log(empty(basket));
-
-//> __IMPORTANT__
+empty('apples');
+empty('corn');
+empty('beef');
+console.log(`basket is now empty ${basket}`)
+console.log('this is basket', basket);
 //> Make sure that you are writing code *in the file* to test every function that you write!
 
 //For example, to test `addItem`:
