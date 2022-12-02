@@ -21,16 +21,22 @@ console.log(`Basket is now ${basket}`);
 //- Create a function called `listItems`. It should:
 //  - loop over the items in the `basket` array
 //  - console.log each indiviconst x = 0;
-
+let j = 0;
 function listItems(basket) {
     for(let j = 0; j <= basket.length; j++) {
         console.log(basket[j]);
     }
 }
-console.log(listItems(basket));
+listItems(basket);
 
 //- Create a function called `empty`. It should:
 //  - reset the `basket` to an empty array
+function empty(basket)  {
+    if( basket.length > 0) {
+        basket.pop();
+    }
+}
+console.log(empty(basket));
 
 //> __IMPORTANT__
 //> Make sure that you are writing code *in the file* to test every function that you write!
