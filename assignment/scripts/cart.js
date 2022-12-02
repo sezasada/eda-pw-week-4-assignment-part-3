@@ -21,10 +21,10 @@ console.log(`Basket is now ${basket}`);
 //- Create a function called `listItems`. It should:
 //  - loop over the items in the `basket` array
 //  - console.log each indiviconst x = 0;
-const x = 0;
+
 function listItems(basket) {
-    if(x <= basket.length) {
-        return basket[x];
+    for(let j = 0; j <= basket.length; j++) {
+        console.log(basket[j]);
     }
 }
 console.log(listItems(basket));
