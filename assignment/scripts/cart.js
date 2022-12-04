@@ -36,3 +36,4 @@ empty('beef');
 console.log(`basket is now empty ${basket}`)
 console.log('this is basket', basket);
 // checking to see if items are now deleted. 
+basket;
