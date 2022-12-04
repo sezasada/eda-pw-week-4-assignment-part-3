@@ -7,11 +7,11 @@ function addItem(item) {
     return true;
 }
 // function that will add items to the array.
-addItem('corn ');
-addItem('beef ');
+addItem(' corn');
+addItem(' beef');
 // added corn and beef to items.
 console.log(`Basket is ${basket}`);
-console.log('Adding apples (expect true)', addItem('apples '));
+console.log('Adding apples (expect true)', addItem(' apples'));
 //added apples to basket
 console.log(`Basket is now ${basket}`);
 //logged basket to console.
