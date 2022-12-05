@@ -23,15 +23,16 @@ function listItems(basket) {
 }
 listItems(basket);
 //function that will list each item in the console.
-function empty(item)  {
-    console.log('removed item', item);
-    basket.pop();
-    return true;
-}
+
+
 // function that will delete each item in the basket array.
-empty('apples');
-empty('corn');
-empty('beef');
+console.log('Deleted Items');
+function empty()  {
+    for ( x = 0; x = basket.length; x++) {
+        console.log(basket.pop());
+    }
+}
+empty();
 // calling the deleted items
 console.log(`basket is now empty ${basket}`)
 console.log('this is basket', basket);
