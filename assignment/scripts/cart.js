@@ -28,10 +28,10 @@ listItems(basket);
 // function that will delete each item in the basket array.
 console.log('Deleted Items');
 function empty()  {
-    for ( x = 0; x = basket.length; x++) {
+    for ( let x = 0; x = basket.length; x++) {
         console.log(basket.pop());
     }
-}
+} 
 empty();
 // calling the deleted items
 console.log(`basket is now empty ${basket}`)
